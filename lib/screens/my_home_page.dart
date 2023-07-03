@@ -18,21 +18,22 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Scaffold(
             body: Column(
               children: [
-                Row(
-                  children: [
-                    ImageIcon(
-                      AssetImage("assets/img/menu.png"),
-                      size: 24,
-                      color: Colors.black,
-                    ),
-                    Row(
+                Container(
+                  margin: EdgeInsets.only(left:20, right: 24),
+                    child:Row(
+                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(Icons.search),
-                        Icon(Icons.notification_add)
+                        Icon(Icons.menu_outlined, size: 24, color: Colors.black,),
+                        Row(
+                          children: [
+                            Icon(Icons.search),
+                            SizedBox(width: 10),
+                            Icon(Icons.notifications)
+                          ],
+                        ),
                       ],
                     )
-                  ],
-                )
+                ),
               ],
             ),
         ),
