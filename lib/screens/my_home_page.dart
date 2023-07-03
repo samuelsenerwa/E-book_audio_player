@@ -25,7 +25,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       size: 24,
                       color: Colors.black,
                     ),
-                    
+                    Row(
+                      children: [
+                        Icon(Icons.search),
+                        Icon(Icons.notification_add)
+                      ],
+                    )
                   ],
                 )
               ],
