@@ -21,8 +21,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   children: [
                     ImageIcon(
-                      AssetImage("im")
-                    )
+                      AssetImage("assets/img/menu.png"),
+                      size: 24,
+                      color: Colors.black,
+                    ),
+                    
                   ],
                 )
               ],
